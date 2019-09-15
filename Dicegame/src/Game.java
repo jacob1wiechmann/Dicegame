@@ -1,3 +1,5 @@
+import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
 	public void play() {
@@ -15,8 +17,13 @@ public class Game {
 	      System.out.println("The die is a " + dieNum);
 	   
 	      // write the rest of your code below
-	        
-	   }
+	        if(enteredNum == dieNum) {
+	        	int Winner = enteredBet*10;
+	        	System.out.println("Congratulations you win" + Winner + "dollars");}
+	        		else {
+	        		System.out.println("Sorry you lose");}
+	        }
+	
 	}
 
-}
+
